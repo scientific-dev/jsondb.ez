@@ -1,0 +1,25 @@
+{
+  "name": "jsondb.ez",
+  "version": "0.0.1",
+  "description": "Simple database which stores data in JSON files!",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "^0.0.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "json.db",
+    "quick.json",
+    "easy-json-database",
+    "database",
+    "quick.db",
+    "mongo.eco",
+    "factful.js",
+    "node-periodic-table",
+    "quickmongo",
+    "snowflake",
+    "science_spot_codes"
+  ],
+  "author": "science_spot_codes",
+  "license": "ISC"
+}

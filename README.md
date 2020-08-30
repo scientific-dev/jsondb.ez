@@ -1,4 +1,4 @@
-# JsonDb.Ez
+# JsonDB.Ez
 
 A simple package which uses **JSON** as a database to store values using keys in the form of
 

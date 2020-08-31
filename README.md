@@ -1,4 +1,4 @@
-# JsonDB.Ez
+# JsonDb.Ez
 
 A simple package which uses **JSON** as a database to store values using keys in the form of
 
@@ -43,6 +43,9 @@ db.add('foo', 1) // Will add data to the key 'key'
 db.subtract('foo', 1) // Will subtract data to the key 'key'
 
 db.delete('foo') // Will delete 'key' value...
+
+db.push('foo', 'bar') // Will push the string to the array only if there is no value or an array value for that key!
+
 db.deleteAll() // Will delete all data in json file...
 ```
 
@@ -56,7 +59,7 @@ db.importQuick(quickdb.all())
 // This will console log 'Successfully Imported!'
 ```
 
-> **TO NOTE:** If you imported wrong data to importQuick() that would mess your data so always enter a valid quick.db data! And remember import() is for only jsondb.ez Json data only not for Quick.db!
+> **TO NOTE:** If you imported wrong data to importQuick() that would mess your data so always enter a valid quick.db data! And remember import() is for only jsondb.ez Json data only not for Quick.db! And the most thing is Quick.db data importing sometimes will have error coz its been parsed to **JSON** whereas Quick.db data is not in **JSON** format
 
 # Some QNA
 

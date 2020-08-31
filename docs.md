@@ -23,16 +23,16 @@ An easy way to store database in JSON Files!
 
 ## Index
 - [Setting up Database](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#setting-up-database)
-   -[Set](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#set)
-   -[Get](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#get)
-   -[All](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#all)
-   -[Import](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#import)
-   -[StartsWith](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#startswith)
-   -[Add](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#add)
-   -[Subtract](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#subtract)
-   -[Push](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#push)
-   -[Delete](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#delete)
-   -[DeleteAll](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#deleteall)
+   - [Set](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#set)
+   - [Get](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#get)
+   - [All](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#all)
+   - [Import](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#import)
+   - [StartsWith](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#startswith)
+   - [Add](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#add)
+   - [Subtract](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#subtract)
+   - [Push](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#push)
+   - [Delete](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#delete)
+   - [DeleteAll](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#deleteall)
 
 ## Setting up Database
 There are various options to set a database. Example given below!

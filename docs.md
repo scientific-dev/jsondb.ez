@@ -21,7 +21,7 @@ An easy way to store database in JSON Files!
 
 ## Docs
 
-### Setting up Database
+## Setting up Database
 There are various options to set a database. Example given below!
 
 ```js
@@ -43,7 +43,7 @@ const db = new Database(options)
 | filename        | string     | File name of the json file. Eg:- `kek` for kek.json               |
 | clearOnStart    | boolean    | Will clear data on each restart of the file                       |
 
-### set
+## set
 Will set the value of the key
 
 ```js
@@ -56,7 +56,7 @@ db.set(key, value)
 | key             | string                     | ID of the value                                                   |
 | value           | string, number or array    | Value of the ID                                                   |
 
-### get
+## get
 Will return you the value of the key!
 
 ```js
@@ -68,14 +68,14 @@ db.get(key)
 |-----------------|----------------------------|-------------------------------------------------------------------|
 | value           | string, number or array    | Value of the ID                                                   |
 
-### all
+## all
 Will return you the all the JSON data!
 
 ```js
 db.all()
 ```
 
-### import
+## import
 Import data from other JsonDB.ez JSON files
 
 ```js
@@ -87,7 +87,7 @@ db.import(data)
 |-----------------|----------------------------|-------------------------------------------------------------------|
 | data            | object                     | Eg:- ``db.all()`` Supports **JsonDB.ez** files only!              |
 
-### startsWith
+## startsWith
 Will return you an array of JSON data containing keys which startsWith your query
 
 ```js
@@ -99,7 +99,7 @@ db.startsWith(query)
 |-----------------|----------------------------|-------------------------------------------------------------------|
 | query           | string                     | Thing to search                                                   |
 
-### add
+## add
 Will add value with the old existing value!
 
 ```js
@@ -125,7 +125,7 @@ db.subtract(key, amount)
 | key             | string                     | ID of the value                                                   |
 | amount          | number                     | Amount to subtract                                                |
 
-### push
+## push
 Will push data only if the old existing value is an array or null!
 
 ```js
@@ -138,7 +138,7 @@ db.push(key, value)
 | key             | string                     | ID of the value                                                   |
 | value           | string or array            | Value to pus                                                      |
 
-### delete
+## delete
 Will delete the value by its key
 
 ```js
@@ -150,7 +150,7 @@ db.delete(key)
 |-----------------|----------------------------|-------------------------------------------------------------------|
 | key             | string                     | ID of the value                                                   |
 
-### deleteAll
+## deleteAll
 Will clear whole database JSON file to ``[]``
 
 ```js

@@ -7,6 +7,9 @@ A simple package which uses **JSON** as a database to store values using keys in
 ```
 
 This package was actually made to gather data and convert it into **JSON** but now you can use this as Data to JSON Convertor or as a simple Database. You just need right knowledge to use it!
+-[Docs](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md)
+-[Discord Server](https://discord.gg/FrduEZd)
+-[Npm](https://www.npmjs.com/package/jsondb.ez)
 
 # Quick Example
 

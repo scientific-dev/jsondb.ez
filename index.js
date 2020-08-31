@@ -1,5 +1,6 @@
 // Install packages
 const fs = require('fs');
+const base = require('./base.js')
 
 class Database{
   constructor(options={}){
@@ -24,41 +25,27 @@ class Database{
     if(!key || !value) throw new Error('You are missing the key or the value!')
     if(key.includes(' ')) throw new Error('Key should not contain space!')
     key = key.toLowerCase()
-    var data = JSON.parse(fs.readFileSync(`${this.name}`).toString())
-    var data = data.filter(x => x.key !== key)
-    data.push(JSON.parse(`{"key": "${key}", "value": "${value}"}`))
-    fs.writeFileSync(`${this.name}`, JSON.stringify(data))
+    base.set(this.name, key, value)
     return
   }
 
   get(key){
     if(!key || key.includes(' ')) throw new Error('Invalid key!')
     key = key.toLowerCase()
-    var data = JSON.parse(fs.readFileSync(`${this.name}`).toString())
-    for(let i = 0; i < data.length; i++){
-      if(data[i].key == key){
-        return data[i].value
-      }
-    }
-    return null
+    return base.get(this.name, key)
   }
 
   has(key){
     if(!key || key.includes(' ')) throw new Error('Invalid key!')
     key = key.toLowerCase()
-    var data = JSON.parse(fs.readFileSync(`${this.name}`).toString())
-    for(let i = 0; i < data.length; i++){
-      return true
-    }
-    return false
+    if(base.get(this.name, key)) return true
+    else return false
   }
 
   delete(key){
     if(!key || key.includes(' ')) throw new Error('Invalid key!')
     key = key.toLowerCase()
-    let data = JSON.parse(fs.readFileSync(`${this.name}`).toString())
-    data = data.filter(x => x.key !== key)
-    fs.writeFileSync(`${this.name}`, JSON.stringify(data))
+    base.delete(this.name, key)
   }
 
   all(){
@@ -121,7 +108,7 @@ class Database{
     let database = JSON.parse(fs.readFileSync(`${this.name}`).toString())
     data.forEach(d => {
       database = database.filter(x => x.key !== d.ID.toLowerCase())
-      database.push(JSON.parse(`{"key": "${d.ID}", "value": "${d.data}"}`))
+      database.push(JSON.parse(`{"key": "${JSON.stringify(d.ID)}", "value": "${JSON.stringify(d.data)}"}`))
     })
     fs.writeFileSync(`${this.name}`, JSON.stringify(database))
     console.log('Finished exporting!')
@@ -137,6 +124,24 @@ class Database{
     fs.writeFileSync(`${this.name}`, JSON.stringify(database))
     console.log('Finished exporting!')
     return
+  }
+
+  push(key, value){
+    let data = JSON.parse(fs.readFileSync(`${this.name}`).toString())
+    for(let i = 0; i < data.length; i++){
+      if(data[i].key == key){
+        let olddata = data[i].value
+        if(!Array.isArray(olddata)) throw new Error('You cant push into any other typeof except Array!')
+        olddata.push(value)
+        data = data.filter(x => x.key !== key)
+        console.log(data)
+        data.push(JSON.parse(`{"key": "${key}", "value": ${JSON.stringify(olddata)}}`))
+        fs.writeFileSync(`${this.name}`, JSON.stringify(data))
+        return value
+      }
+    }
+    data.push(JSON.parse(`{"key": "${key}", "value": ["${value}"]}`))
+    fs.writeFileSync(`${this.name}`, JSON.stringify(data))
   }
 }
 

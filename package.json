@@ -1,6 +1,6 @@
 {
   "name": "jsondb.ez",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Simple database which stores data in JSON files!",
   "main": "index.js",
   "dependencies": {
@@ -9,6 +9,9 @@
   "devDependencies": {},
   "keywords": [
     "json.db",
+    "jsondb.ez",
+    "jsondb",
+    "easy-json-database",
     "quick.json",
     "easy-json-database",
     "database",

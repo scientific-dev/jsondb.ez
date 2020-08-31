@@ -27,6 +27,7 @@ An easy way to store database in JSON Files!
    - [Get](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#get)
    - [All](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#all)
    - [Import](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#import)
+   - [ImportQuick](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#importquick)
    - [StartsWith](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#startswith)
    - [Add](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#add)
    - [Subtract](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#subtract)
@@ -99,6 +100,21 @@ db.import(data)
 | Parameter Name  | Typeof                     | Description                                                       |
 |-----------------|----------------------------|-------------------------------------------------------------------|
 | data            | object                     | Eg:- ``db.all()`` Supports **JsonDB.ez** files only!              |
+
+# importQuick
+Import data from Quick.db!
+
+```js
+const quickdb = require('quick.db')
+
+db.importQuick(quickdb.all())
+// This will console log 'Successfully Imported!
+```
+
+**Parameters:**
+| Parameter Name  | Typeof                     | Description                                                       |
+|-----------------|----------------------------|-------------------------------------------------------------------|
+| data            | object                     | Eg:- ``quickdb.fetchAll()`` Whole data of quick.db **Not JsonDB.ez|
 
 ## startsWith
 Will return you an array of JSON data containing keys which startsWith your query

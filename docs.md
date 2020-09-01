@@ -81,7 +81,7 @@ db.get(key)
 **Parameters:**
 | Parameter Name  | Typeof                     | Description                                                       |
 |-----------------|----------------------------|-------------------------------------------------------------------|
-| value           | string, number or array    | Value of the ID                                                   |
+| key             | string                     | ID of the value                                                   |
 
 ## all
 Will return you the all the JSON data!

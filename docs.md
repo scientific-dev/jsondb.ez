@@ -115,7 +115,7 @@ db.importQuick(quickdb.all())
 **Parameters:**
 | Parameter Name  | Typeof                     | Description                                                       |
 |-----------------|----------------------------|-------------------------------------------------------------------|
-| data            | object                     | Eg:- ``quickdb.fetchAll()`` Whole data of quick.db **Not JsonDB.ez|
+| data            | object                     | Eg:- ``quickdb.fetchAll()`` Whole data of quick.db **Not JsonDB.ez**|
 
 ## startsWith
 Will return you an array of JSON data containing keys which startsWith your query
@@ -166,7 +166,7 @@ db.push(key, value)
 | Parameter Name  | Typeof                     | Description                                                       |
 |-----------------|----------------------------|-------------------------------------------------------------------|
 | key             | string                     | ID of the value                                                   |
-| value           | string or array            | Value to pus                                                      |
+| value           | string or array            | Value to push                                                     |
 
 ## delete
 Will delete the value by its key

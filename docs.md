@@ -3,19 +3,19 @@
 An easy way to store database in JSON Files!
 
 ## Index
-- [Things before we start](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#things-before-we-start)
-- [Setting up Database](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#setting-up-database)
-   - [Set](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#set)
-   - [Get](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#get)
-   - [All](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#all)
-   - [Import](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#import)
-   - [ImportQuick](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#importquick)
-   - [StartsWith](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#startswith)
-   - [Add](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#add)
-   - [Subtract](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#subtract)
-   - [Push](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#push)
-   - [Delete](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#delete)
-   - [DeleteAll](https://github.com/Scientific-Guy/jsondb.ez/blob/master/docs.md#deleteall)
+- [Things before we start](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#things-before-we-start)
+- [Setting up Database](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#setting-up-database)
+   - [Set](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#set)
+   - [Get](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#get)
+   - [All](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#all)
+   - [Import](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#import)
+   - [ImportQuick](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#importquick)
+   - [StartsWith](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#startswith)
+   - [Add](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#add)
+   - [Subtract](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#subtract)
+   - [Push](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#push)
+   - [Delete](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#delete)
+   - [DeleteAll](https://github.com/scientific-dev/jsondb.ez/blob/master/docs.md#deleteall)
 
 ## Things before we start!
 
